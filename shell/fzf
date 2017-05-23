@@ -1,5 +1,8 @@
 # This is for fzf from vim so that it will ignore stuff from .gitignore etc
 _shell="$(basename "${SHELL}")"
 _shell_setup="${HOME}/.fzf.${_shell}"
-[ -e "${_shell_setup}" ] && source "${_shell_setup}"
-export FZF_DEFAULT_COMMAND='ag -g ""'
+if [ -e "${_shell_setup}" ] ; then
+  export FZF_COMPLETION_OPTS='--preview="head {}"'
+  export FZF_DEFAULT_COMMAND='ag -g ""'
+  source "${_shell_setup}"
+fi
