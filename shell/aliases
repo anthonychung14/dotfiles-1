@@ -30,6 +30,12 @@ alias e='emacsclient -t'
 alias e.='e .'
 alias e,='e .'
 
+# Ensure color
+alias ls="ls --color=always"
+alias grep="grep --color=always"
+alias egrep="egrep --color=always"
+
+
 _aliasto nvim vim
 _aliasto rg ag
 alias e=nvim

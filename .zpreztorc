@@ -28,6 +28,7 @@ zstyle ':prezto:load' pmodule \
   'directory' \
   'editor' \
   'environment' \
+  'gnu-utility' \
   'git' \
   'history' \
   'history-substring-search' \
