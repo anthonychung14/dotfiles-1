@@ -57,6 +57,8 @@ alias hst='hg status'
 
 alias pep='autopep8 -i '
 
+# Get systemd unit path
+alias syp='systemctl show --value -p FragmentPath '
 #
 # Global aliases
 #
